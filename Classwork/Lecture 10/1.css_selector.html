@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+</head>
+<style>
+
+    /* Universal Selector */
+    *{
+        font-size: 20px;
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    /* ID Selector */
+    #superhero{
+        text-decoration: line-through;
+        color: brown;
+    }
+
+    /* Class Selector */
+    .super{
+        background-color: aqua;
+    }
+
+    /* Element Selector */
+    p{
+        background-color: beige;
+    }
+
+    /* Attribute Selector */
+    input[type="text"]{
+        background-color: aliceblue;
+    }
+    input[type="password"]{
+        background-color:antiquewhite;
+    }
+
+</style>
+<body>
+    <!-- 
+    1. Universal
+    2. Id
+    3. Class
+    4. Element
+    5. Attribute
+    -->
+
+    <h1>Learning Simple selectors</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, officia, iusto temporibus quibusdam mollitia architecto vel quisquam at ducimus, porro assumenda sint sit aspernatur sed expedita veritatis reiciendis repellendus quia?</p>
+
+    <h1 id="superhero">Superheros</h1>
+    <ul class="super">
+        <li>Spider Man</li>
+        <li>Iron Man</li>
+        <li>Hulk</li>
+    </ul>
+
+    <p >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe quod impedit, voluptatem odit ipsam nihil minus nobis magnam odio blanditiis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Modinn, velit!</p>
+
+    <input type="text">
+    <input type="password">
+</body>
+</html>
