@@ -1,0 +1,20 @@
+/* 1. Decendant CSS:  */
+ul li a{
+    color: red;
+    font-size: 20px;
+}
+
+/* Child Combinators:  */
+section > h3{
+    border-top: 2px solid green;
+}
+
+/* Adjacent Combinators:  */
+h3 + p{
+    background-color: yellow;
+}
+
+/* Sibling Combinators */
+ul ~ li{
+    color:blue
+}
