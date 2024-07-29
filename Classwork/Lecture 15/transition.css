@@ -1,0 +1,26 @@
+.target {
+    font-size: 14px;
+    width: 150px;
+    height: 50px;
+    border: 2px solid black;
+    background-color: aqua;
+    /* transition: font-size 4s 1s; */
+    transition: all ease-out;
+    transition-duration: 2s;
+    /* transition-delay: 2s; */
+    
+    /* transition:
+    all 200ms,
+    opacity 400ms; */
+
+  }
+  
+  .target:hover {
+    font-size: 36px;
+    width: 300px;
+    height: 300px;
+    background-color: aquamarine;
+    border-radius: 50%;
+  }
+
+ 
