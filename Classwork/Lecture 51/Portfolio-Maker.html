@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+</head>
+<style>
+    .Output-Box {
+        width: 450px;
+        padding: 20px;
+        border-radius: 20px;
+        border: 5px solid black;
+        text-align: center;
+        background-color: antiquewhite;
+        margin: 30px auto;
+    }
+
+    .Output-Box img {
+        width: 120px;
+        border-radius: 20%;
+        border: 2px solid black;
+    }
+
+    .input-fields{
+        width: 450px;
+        padding: 20px;
+        border-radius: 20px;
+        border: 5px solid black;
+        text-align: center;
+        background-color: antiquewhite;
+        margin: 30px auto;
+    }
+
+    .input-fields label {
+        display: block;
+        margin-top: 10px;
+        font-weight: bold;
+    }
+
+    .input-fields input {
+        width: 80%;
+        padding: 8px;
+        margin-top: 15px;
+        border: 1px solid black;
+        border-radius: 15px;
+    }
+
+    .input-fields button {
+        padding: 10px;
+        margin-top: 15px;
+        background-color: aquamarine;
+        color: blue;
+        font-weight: 600;
+        cursor: pointer;
+    }
+
+    
+</style>
+<body>
+    <div class="Output-Box">
+        <img id="pic" src="https://media.istockphoto.com/id/2014684899/vector/placeholder-avatar-female-person-default-woman-avatar-image-gray-profile-anonymous-face.jpg?s=612x612&w=0&k=20&c=D-dk9ek0_jb19TiMVNVmlpvYVrQiFiJmgGmiLB5yE4w=" alt="Profile Picture will be shown here">
+        <h1 id="name">Name: </h1>
+        <p id="bio">Bio Will be added here.</p>
+    </div>
+
+
+    <div class="input-fields">
+        <label for="Name">Update Name: </label>
+        <input type="text" id="name-field"> 
+
+    <br>
+
+        <label for="Bio">Update Bio: </label>
+        <input type="text" id="bio-field"> 
+
+    <br>
+
+        <label for="Name">Update Image: </label>
+        <input type="text" id="image-link-field"> 
+
+        <button id="confirm-button">Update Profile</button>
+
+    </div>
+
+    <script src="Portfolio.js"></script>
+</body>
+</html>

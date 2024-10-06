@@ -1,32 +1,19 @@
-let display = document.getElementById('display')
-let currentOperation = ''
-let firstOperand = ''
-let secondOperand = ''
+let input = ""
+let btns = document.querySelectorAll('.btn')
+Array.from(btns).forEach((button) => {
+    button.addEventListener("click",  (e) => {
+        if(e.target.innerHTML == '=') {
+            input = eval(input);
+            document.querySelector('#input-field').value = input;
+        }
+        else if (e.target.innerHTML == "C") {
+            document.querySelector('#input-field').value = ''
+        }
 
-function appendNumber(number) {
-    display.vale += number
-}
-
-function setOperation(operation) {
-    if(display.value === '') return;
-
-    firstOperand = display.value
-    currentOperation = operation.value
-    display.value = ''
-}
-
-function calculate() {
-    if(display.value === '' || currentOperation === '') return;
-    display.value = eval(firstOperand + currentOperation + secondOperand)
-    
-    currentOperation = ''
-    firstOperand = ''
-    secondOperand = ''
-}
-
-function clearDisplay() {
-    display.value = ''
-    currentOperation = ''
-    firstOperand = ''
-    secondOperand = ''
-}
+        else {
+            input = input + e.target.innerHTML;
+            document.querySelector('#input-field').value = input;
+        }
+        
+    }) 
+})
